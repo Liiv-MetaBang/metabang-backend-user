@@ -1,5 +1,10 @@
 package com.dkne.metabang.web;
 
+<<<<<<< HEAD
+=======
+import com.dkne.metabang.web.dto.UserCreateRequestDto;
+import com.dkne.metabang.web.dto.UserResponseDto;
+>>>>>>> 01f1c8221c4ede488cc4b561f57958ab9772657e
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,9 +25,29 @@ public class UserController {
     public String hello() {
         return "hello";
     }
-    
+
+    // create user
+    @PostMapping("/user")
+    public int create(@RequestBody UserCreateRequestDto requestDto) {
+        return userService.create(requestDto);
+    }
+
+    // show user info
+    @GetMapping("/user/{user_id}")
+    public UserResponseDto showUser(@PathVariable int user_id) {
+        return userService.findById(user_id);
+    }
+
+    // update user info
     @PostMapping("/user/{user_id}")
     public int updateUser(@PathVariable  int user_id, @RequestBody UserUpdateRequestDto requestDto){
         return userService.update(user_id , requestDto);
+    }
+
+    //delecte user
+    @DeleteMapping("/user/{user_id}")
+    public int deleteUser(@PathVariable int user_id) {
+        userService.delete(user_id);
+        return user_id;
     }
 }
