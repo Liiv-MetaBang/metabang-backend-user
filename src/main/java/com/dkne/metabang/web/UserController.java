@@ -1,10 +1,7 @@
 package com.dkne.metabang.web;
 
-<<<<<<< HEAD
-=======
 import com.dkne.metabang.web.dto.UserCreateRequestDto;
 import com.dkne.metabang.web.dto.UserResponseDto;
->>>>>>> 01f1c8221c4ede488cc4b561f57958ab9772657e
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 
