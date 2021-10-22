@@ -10,7 +10,7 @@ import com.dkne.metabang.web.dto.UserUpdateRequestDto;
 
 import lombok.AllArgsConstructor;
 
-@CrossOrigin(origins = {"*"}, maxAge = 6000)
+//@CrossOrigin(origins = {"*"}, maxAge = 6000)
 @RestController
 @AllArgsConstructor
 @RequestMapping("v1")
