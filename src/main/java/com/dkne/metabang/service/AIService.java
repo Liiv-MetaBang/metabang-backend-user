@@ -17,8 +17,8 @@ import java.net.URL;
 @Service
 public class AIService {
 
-    private String[] city= {"영등포본동","영등포동","여의도동","당산1동","당산2동","도림동","문래동","양평1동",
-    "양평2동","신길1동","신길3동","신길4동","신길5동","신길6동","신길7동","대림1동","대림2동","대림3동"};
+    private String[] city= {"영등포본동","영등포동","여의도동","당산동","당산동","도림동","문래동","양평동",
+    "양평동","신길동","신길동","신길동","신길동","신길동","신길동","대림동","대림동","대림동"};
     private HttpURLConnection tokenConnection;
 
     public String recommand(AIRequestDto requestDto)  throws IOException {
