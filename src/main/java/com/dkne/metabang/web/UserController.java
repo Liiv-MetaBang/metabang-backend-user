@@ -36,7 +36,7 @@ public class UserController {
     }
 
     // update user info
-    @PostMapping("/user/{user_id}")
+    @PutMapping("/user/{user_id}")
     public int updateUser(@PathVariable  int user_id, @RequestBody UserUpdateRequestDto requestDto){
         return userService.update(user_id , requestDto);
     }
